@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pooja's Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            position: relative;
+        }
+        .navbar {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: #333;
+        }
+        .navbar a {
+            color: white;
+        }
+        .navbar a:hover {
+            color: #ff66b2;
+        }
+        .about-section, .projects-section, .skills-section, .contact-section {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .about-section h2, .projects-section h2, .skills-section h2, .contact-section h2 {
+            margin-bottom: 30px;
+        }
+        .about-section img {
+            border-radius: 50%;
+            border: 5px solid #ddd;
+            max-width: 200px;
+            width: 100%;
+            height: auto;
+        }
+        .about-section .content, .skills-section .content, .contact-section .content {
+            max-width: 600px;
+            margin: 20px auto;
+        }
+        .projects-section .card, .skills-section .card {
+            margin: 20px;
+        }
+        .skills-section .card img {
+            max-width: 100px;
+            width: 100%;
+            height: auto;
+            margin: 20px auto;
+        }
+        .contact-section {
+            background-color: #333;
+            color: white;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        .contact-info div {
+            margin: 10px 20px;
+            display: flex;
+            align-items: center;
+        }
+        .contact-info i {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .social-icons a {
+            display: inline-block;
+            margin: 10px;
+            background-color: #ff66b2;
+            border-radius: 50%;
+            padding: 10px;
+            color: white;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .social-icons a:hover {
+            text-decoration: none;
+            color: white;
+        }
+        .social-icons a img {
+            width: 24px;
+            height: 24px;
+        }
+    </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Home Section -->
+<section id="home" class="about-section">
+    <div class="container">
+        <h2>Home</h2>
+        <p>Welcome to my portfolio website. Scroll down to learn more about me and my work.</p>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="about-section">
+    <div class="container">
+        <h2>About</h2>
+        <img src="C:\Users\pooja\Documents\DA Workshop\Portfolio Project\images\fotor_2023-1-18_22_35_20.jpg" alt="Profile Image">
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.</p>
+            <p>Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris. Quis varius quam quisque id diam vel quam elementum pulvinar.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="projects-section">
+    <div class="container">
+        <h2>Projects</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/projects/1.jpg" class="card-img-top" alt="Project 1 Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 1</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet.</p>
+                        <a href="#" class="btn btn-primary">Blog Post</a>
+                        <a href="#" class="btn btn-secondary">Source Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/projects/2.jpg" class="card-img-top" alt="Project 2 Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 2</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet.</p>
+                        <a href="#" class="btn btn-primary">Blog Post</a>
+                        <a href="#" class="btn btn-secondary">Source Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/projects/3.jpg" class="card-img-top" alt="Project 3 Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 3</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet.</p>
+                        <a href="#" class="btn btn-primary">Blog Post</a>
+                        <a href="#" class="btn btn-secondary">Source Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="skills-section">
+    <div class="container">
+        <h2>Skills</h2>
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <div class="card">
+                    <img src="images/skills/1.png" class="card-img-top" alt="Skill 1 Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Python</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet.</p>
+                        <a href="#" class="btn btn-link">Link to course or bootcamp</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="card">
+                    <img src="images/skills/2.png" class="card-img-top" alt="Skill 2 Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Data Visualization</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet.</p>
+                        <a href="#" class="btn btn-link">Link to course or bootcamp</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="card">
+                    <img src="images/skills/3.png" class="card-img-top" alt="Skill 3 Image">
+                    <div class="card-body">
+                        <h5 class="card-title">SQL</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet.</p>
+                        <a href="#" class="btn btn-link">Link to course or bootcamp</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="card">
+                    <img src="images/skills/4.png" class="card-img-top" alt="Skill 4 Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Data Storytelling</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet.</p>
+                        <a href="#" class="btn btn-link">Link to course or bootcamp</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+    <div class="container">
+        <h2>Contact Me</h2>
+        <div class="contact-info">
+            <div>
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:pooja.minpuri@gmail.com">pooja.minpuri@gmail.com</a>
+            </div>
+            <div>
+                <i class="fas fa-phone-alt"></i>
+                <a ></a>+917093669755</a>
+            </div>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com" data-toggle="tooltip" title="LinkedIn">
+                <img src="icons/linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="https://www.twitter.com" data-toggle="tooltip" title="Twitter">
+                <img src="icons/twitter.png" alt="Twitter">
+            </a>
+            <a href="https://www.github.com" data-toggle="tooltip" title="GitHub">
+                <img src="icons/github.png" alt="GitHub">
+            </a>
+            <a href="https://www.medium.com" data-toggle="tooltip" title="Medium">
+                <img src="icons/medium.png" alt="Medium">
+            </a>
+            <a href="https://www.youtube.com" data-toggle="tooltip" title="YouTube">
+                <img src="icons/youtube.png" alt="YouTube">
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Bootstrap and FontAwesome JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+        
+        // Smooth scrolling for links
+        $('a.nav-link').on('click', function(event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function(){
+                    window.location.hash = hash;
+                });
+            }
+        });
+    });
+</script>
+</body>
+</html>
